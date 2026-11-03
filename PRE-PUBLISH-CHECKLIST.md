@@ -1,13 +1,6 @@
-# Pre-publish checklist
-
-- [ ] Confirm the exact GitHub repository for AtvTube and AtvTubeCobalt in `assets/js/config.js`.
-- [ ] Confirm both repositories are public and publish APK files as GitHub Release assets.
-- [ ] Replace `CONTACT_EMAIL` with a working support email.
-- [ ] Add authentic product screenshots and an accurate feature list.
-- [ ] Add supported Android versions, device requirements, package names and install instructions.
-- [ ] Review and complete the privacy policy, terms and refund policy.
-- [ ] Add actual seller / developer identity information appropriate to the payment-provider application.
-- [ ] Verify all download links from a clean browser session.
-- [ ] Test the English / Chinese toggle on desktop and mobile.
-- [ ] Choose a domain and configure it in GitHub Pages if desired.
-- [ ] Do not add a fake price, checkout button, company address or unsupported feature claim.
+- [ ] `downloads/android-arm64.apk` and `downloads/android-arm.apk` are present (or release URLs set in config.js)
+- [ ] Both download buttons work from a clean browser, on desktop and on a real device
+- [ ] `contactEmail` set to an address you monitor
+- [ ] Privacy, Terms and Refund pages: every `[Before publishing …]` note replaced; date filled
+- [ ] Refund text matches your actual payment provider's rules
+- [ ] Tested EN / 中文 toggle on desktop and phone

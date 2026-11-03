@@ -1,16 +1,16 @@
 /*
- * Site configuration
- * Update these values before publishing.
+ * Site configuration — the only file you normally need to edit.
  */
 window.ATVTUBE_CONFIG = {
-  // GitHub repositories used for release discovery.
-  // Set owner/repo to the public repository that publishes each APK.
-  releases: {
-    atvtube: { owner: "tebugpt", repo: "AtvTube" },
-    cobalt: { owner: "92baby", repo: "AtvTubeCobalt" }
+  // Download links. Default: files placed in the site's /downloads folder.
+  // If a file is over 100 MB, upload it to a GitHub Release instead and use e.g.
+  // "https://github.com/OWNER/REPO/releases/latest/download/android-arm64.apk"
+  downloads: {
+    arm64: "downloads/android-arm64.apk",
+    arm: "downloads/android-arm.apk"
   },
-  // Replace with a support email address you actively monitor.
-  contactEmail: "CONTACT_EMAIL",
-  // Set to your public website URL after choosing a custom domain.
-  siteUrl: ""
+  // Optional. Shown next to the downloads, e.g. "v1.2.3". Leave "" to hide.
+  version: "",
+  // Support email. Leave "" to hide every contact link until you have one.
+  contactEmail: ""
 };

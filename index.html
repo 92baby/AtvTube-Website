@@ -1,149 +1,94 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0b14">
-  <meta name="description" content="Discover AtvTube and AtvTubeCobalt. Explore features, download official Android APK releases, and learn about optional lifetime access.">
-  <meta property="og:title" content="AtvTube — A better TV experience">
-  <meta property="og:description" content="Official AtvTube product website and APK downloads.">
-  <meta property="og:type" content="website">
-  <title>AtvTube — A better TV experience</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/config.js" defer></script>
-  <script src="assets/js/app.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0f1a1f">
+<meta name="description" content="Download Atvtube for Android: android-arm64.apk and android-arm.apk. Purchases are made inside the app.">
+<meta property="og:title" content="Atvtube — made for the big screen">
+<meta property="og:type" content="website">
+<title>Atvtube — made for the big screen</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/site.js" defer></script>
 </head>
 <body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="AtvTube home">
-      <span class="brand-mark">A</span><span>AtvTube</span>
-    </a>
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#products" data-i18n="navProducts">Products</a>
-      <a href="#downloads" data-i18n="navDownloads">Downloads</a>
-      <a href="#premium" data-i18n="navPremium">Premium</a>
-      <a href="#about" data-i18n="navAbout">About</a>
-    </nav>
-    <div class="header-actions">
-      <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">中文</button>
-      <a class="button button-small button-primary header-download" href="#downloads" data-i18n="navGetApp">Get the app</a>
-      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
-    </div>
-  </header>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="#top" aria-label="Atvtube"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="5" y="5" width="54" height="54" rx="13" fill="none" stroke="#ffc24b" stroke-width="6"/><path d="M26 20v24l20-12z" fill="#f3eee3"/></svg>Atvtube</a>
+<nav class="nav" aria-label="Main"><a href="#download" data-i18n="navDownload">Download</a><a href="#install" data-i18n="navInstall">Install</a><a href="#purchases" data-i18n="navBuy">Purchases</a></nav>
+<div class="header-tools"><button class="lang" id="lang" type="button" aria-label="Language">中文</button><a class="btn btn-focus btn-sm" href="#download" data-i18n="navDownload">Download</a></div>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+<div>
+<h1 data-i18n="heroTitle">Atvtube, made for the big screen.</h1>
+<p class="lead" data-i18n="heroLead">Download the Android app for your TV, box or phone. Installing is free, and anything you can buy is offered inside the app.</p>
+<div class="hero-actions"><a class="btn btn-focus" href="#download"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg><span data-i18n="heroCta">Download</span></a><a class="btn btn-line" href="#install" data-i18n="heroSecondary">How to install</a></div>
+<p class="hero-meta" data-i18n="heroMeta">Two files: android-arm64.apk and android-arm.apk</p>
+</div>
+<div class="tv" aria-hidden="true">
+<div class="tv-bezel"><div class="tv-screen">
+<div class="tv-bar"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="5" y="5" width="54" height="54" rx="13" fill="none" stroke="#ffc24b" stroke-width="6"/><path d="M26 20v24l20-12z" fill="#f3eee3"/></svg>Atvtube<i><b></b><b></b><b></b></i></div>
+<div class="tv-grid"><div class="tv-tiles"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="tv-ring"></div></div>
+</div></div><div class="tv-stand"></div>
+</div>
+</div></section>
 
-  <main>
-    <section class="hero section-wrap" id="home">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span><span data-i18n="eyebrow">OFFICIAL PRODUCT WEBSITE</span></div>
-        <h1 data-i18n="heroTitle">Your entertainment.<br><span>On your terms.</span></h1>
-        <p class="hero-description" data-i18n="heroDescription">Meet AtvTube — a software project built to bring a thoughtful viewing experience to your Android devices.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#downloads"><span data-i18n="heroCta">Explore downloads</span><span aria-hidden="true">↗</span></a>
-          <a class="button button-quiet" href="#products" data-i18n="heroSecondary">Discover the apps</a>
-        </div>
-        <div class="hero-footnote"><span class="check-icon">✓</span><span data-i18n="heroNote">Official releases · Direct APK downloads · Product information</span></div>
-      </div>
-      <div class="hero-art" aria-label="AtvTube product preview">
-        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-        <div class="preview-window">
-          <div class="preview-top"><span class="preview-logo">A</span><span>AtvTube</span><span class="preview-dots">•••</span></div>
-          <div class="preview-feature">
-            <div class="preview-label">DISCOVER</div>
-            <div class="preview-headline">Explore<br>what you love.</div>
-            <div class="preview-sub">A preview of the AtvTube experience</div>
-            <div class="preview-pill">Explore now <span>↗</span></div>
-          </div>
-          <div class="preview-shelf"><i></i><i></i><i></i><i></i></div>
-        </div>
-        <div class="floating-chip chip-top"><span class="chip-icon">✦</span><span><b>AtvTube</b><small>Product family</small></span></div>
-        <div class="floating-chip chip-bottom"><span class="chip-download">↓</span><span><b>Official APK</b><small>GitHub Releases</small></span></div>
-      </div>
-    </section>
+<section class="section band" id="download"><div class="wrap">
+<h2 data-i18n="dlTitle">Pick the file for your device</h2>
+<p class="sub" data-i18n="dlSub">Both files are the same app. They differ only in the processor type they are built for.</p>
+<div class="dl-grid">
+<article class="dl rec">
+<span class="dl-badge" data-i18n="recommended">Recommended</span>
+<h3>arm64</h3><p class="bits" data-i18n="arm64Bits">64-bit devices</p>
+<p class="use" data-i18n="arm64Use">Start here. It fits most current phones, tablets, TV boxes and Android TVs.</p>
+<div class="file"><span>android-arm64.apk <span data-version></span></span><span data-size></span></div>
+<a class="btn btn-focus" data-file="arm64" href="downloads/android-arm64.apk" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg><span data-i18n="download">Download</span></a>
+</article>
+<article class="dl">
+<h3>arm</h3><p class="bits" data-i18n="armBits">32-bit devices</p>
+<p class="use" data-i18n="armUse">Use this on older devices, or if the arm64 file won’t install.</p>
+<div class="file"><span>android-arm.apk <span data-version></span></span><span data-size></span></div>
+<a class="btn btn-line" data-file="arm" href="downloads/android-arm.apk" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg><span data-i18n="download">Download</span></a>
+</article>
+</div>
+<p class="dl-note" data-i18n="dlNote"><b>Not sure?</b> Try arm64 first. If Android says the app can’t be installed or isn’t compatible, download the arm file instead.</p>
+</div></section>
 
-    <section class="trust-strip section-wrap">
-      <div><span class="strip-icon">⌘</span><span data-i18n="stripOne">Independent software project</span></div>
-      <div><span class="strip-icon">↓</span><span data-i18n="stripTwo">Official release downloads</span></div>
-      <div><span class="strip-icon">◎</span><span data-i18n="stripThree">Android-focused experience</span></div>
-    </section>
+<section class="section" id="install"><div class="wrap">
+<h2 data-i18n="installTitle">Install it in three steps</h2>
+<ol class="steps">
+<li><h3 data-i18n="s1t">Get the file onto your device</h3><p data-i18n="s1p">Download it in the device’s browser, or save it on a computer and copy it over with a USB drive. On Android TV, a file manager app helps you find it.</p></li>
+<li><h3 data-i18n="s2t">Open it and allow the install</h3><p data-i18n="s2p">Open the APK. When Android asks, allow installs from the app you opened it with, such as your browser or file manager.</p></li>
+<li><h3 data-i18n="s3t">Tap Install, then open Atvtube</h3><p data-i18n="s3p">When it finishes, Atvtube appears with your other apps.</p></li>
+</ol>
+<p class="warn" data-i18n="warn">Only install APK files from this site or from sources you trust.</p>
+</div></section>
 
-    <section class="section-wrap section-block" id="products">
-      <div class="section-heading">
-        <div><div class="eyebrow" data-i18n="productsEyebrow">THE PRODUCT FAMILY</div><h2 data-i18n="productsTitle">Choose your <span>AtvTube.</span></h2></div>
-        <p data-i18n="productsIntro">Explore the available editions and choose the release that matches your device and needs.</p>
-      </div>
-      <div class="product-grid">
-        <article class="product-card product-card-main">
-          <div class="product-card-top"><span class="product-symbol">A</span><span class="product-tag" data-i18n="productMainTag">MAIN PROJECT</span></div>
-          <h3>AtvTube</h3>
-          <p data-i18n="productMainDescription">The AtvTube project. Find product information, project updates and official release links.</p>
-          <a class="text-link" href="#downloads" data-i18n="viewDownloads">View downloads <span>↗</span></a>
-          <div class="card-glow"></div>
-        </article>
-        <article class="product-card product-card-cobalt">
-          <div class="product-card-top"><span class="product-symbol cobalt-symbol">C</span><span class="product-tag tag-cobalt">COBALT EDITION</span></div>
-          <h3>AtvTubeCobalt</h3>
-          <p data-i18n="productCobaltDescription">The Cobalt edition of AtvTube. Check its release notes and download the latest available APK.</p>
-          <a class="text-link" href="#downloads" data-i18n="viewDownloads">View downloads <span>↗</span></a>
-          <div class="card-glow cobalt-glow"></div>
-        </article>
-      </div>
-    </section>
+<section class="section band" id="purchases"><div class="wrap buy">
+<div>
+<h2 data-i18n="buyTitle">Purchases happen inside the app.</h2>
+<p class="sub" data-i18n="buySub">This website doesn’t sell anything and never asks for card or payment details.</p>
+</div>
+<ul>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><div><b data-i18n="b1t">Download here</b><span data-i18n="b1p">The two APK files above are all this site provides.</span></div></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><div><b data-i18n="b2t">Buy in Atvtube</b><span data-i18n="b2p">If you choose to buy something, you do it from within the app.</span></div></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><div><b data-i18n="b3t">Ask if something looks wrong</b><span data-i18n="b3p">If a page outside the app asks you to pay, don’t. Contact us instead.</span></div></li>
+</ul>
+</div></section>
 
-    <section class="download-section" id="downloads">
-      <div class="section-wrap section-block">
-        <div class="section-heading">
-          <div><div class="eyebrow" data-i18n="downloadEyebrow">GET THE OFFICIAL APP</div><h2 data-i18n="downloadTitle">Ready when <span>you are.</span></h2></div>
-          <p data-i18n="downloadIntro">Downloads are served from the project's GitHub Releases. Always check the release notes and device requirements before installing.</p>
-        </div>
-        <div class="release-grid">
-          <article class="release-card" data-release-card="atvtube">
-            <div class="release-head"><div class="release-app-icon">A</div><div><h3>AtvTube</h3><span class="release-caption" data-i18n="releaseCaption">Official GitHub release</span></div><span class="release-status" data-i18n="loading">Loading…</span></div>
-            <div class="release-info"><div><small data-i18n="latestVersion">Latest version</small><b data-version>—</b></div><div><small data-i18n="published">Published</small><b data-date>—</b></div></div>
-            <p class="release-notes" data-notes data-i18n="releaseFallback">Release information will appear here when configured.</p>
-            <a class="button button-primary button-full" data-download href="#" target="_blank" rel="noopener" aria-disabled="true"><span data-i18n="openRelease">Open release</span><span>↗</span></a>
-            <a class="release-secondary" data-release-page href="#" target="_blank" rel="noopener" data-i18n="allReleases">View all releases</a>
-          </article>
-          <article class="release-card release-card-highlight" data-release-card="cobalt">
-            <div class="release-head"><div class="release-app-icon cobalt-icon">C</div><div><h3>AtvTubeCobalt</h3><span class="release-caption" data-i18n="releaseCaption">Official GitHub release</span></div><span class="release-status" data-i18n="loading">Loading…</span></div>
-            <div class="release-info"><div><small data-i18n="latestVersion">Latest version</small><b data-version>—</b></div><div><small data-i18n="published">Published</small><b data-date>—</b></div></div>
-            <p class="release-notes" data-notes data-i18n="releaseFallback">Release information will appear here when configured.</p>
-            <a class="button button-primary button-full" data-download href="#" target="_blank" rel="noopener" aria-disabled="true"><span data-i18n="openRelease">Open release</span><span>↗</span></a>
-            <a class="release-secondary" data-release-page href="#" target="_blank" rel="noopener" data-i18n="allReleases">View all releases</a>
-          </article>
-        </div>
-        <p class="download-disclaimer" data-i18n="downloadDisclaimer">Only install APK files from sources you trust. GitHub release availability depends on the repository's public release settings.</p>
-      </div>
-    </section>
-
-    <section class="section-wrap section-block premium-section" id="premium">
-      <div class="premium-panel">
-        <div class="premium-orb"></div>
-        <div class="eyebrow" data-i18n="premiumEyebrow">OPTIONAL PAID ACCESS</div>
-        <h2 data-i18n="premiumTitle">Support development.<br><span>Unlock more.</span></h2>
-        <p data-i18n="premiumDescription">AtvTube may offer an optional one-time lifetime unlock. The free APK remains available. Details, supported features, price and purchase availability will be published here when finalized.</p>
-        <div class="premium-points"><span><i>✓</i><span data-i18n="premiumPointOne">Optional purchase</span></span><span><i>✓</i><span data-i18n="premiumPointTwo">One-time payment model</span></span><span><i>✓</i><span data-i18n="premiumPointThree">Clear license information</span></span></div>
-        <a class="button button-outline" href="mailto:CONTACT_EMAIL" data-contact-link><span data-i18n="premiumContact">Contact about licensing</span><span>↗</span></a>
-      </div>
-    </section>
-
-    <section class="section-wrap section-block about-section" id="about">
-      <div class="about-copy"><div class="eyebrow" data-i18n="aboutEyebrow">ABOUT THE PROJECT</div><h2 data-i18n="aboutTitle">Built independently.<br><span>Made with care.</span></h2></div>
-      <div class="about-detail"><p data-i18n="aboutDescription">AtvTube is an independently developed software project. This website provides product information, official downloads and support resources. Product availability and features may vary by edition and release.</p><a class="text-link" href="mailto:CONTACT_EMAIL" data-contact-link><span data-i18n="contactDeveloper">Contact the developer</span> <span>↗</span></a></div>
-    </section>
-
-    <section class="section-wrap legal-strip">
-      <div><b data-i18n="transparencyTitle">Clear information matters.</b><span data-i18n="transparencyText">Review the policies and contact details before using or purchasing a product.</span></div>
-      <div class="legal-links"><a href="privacy.html" data-i18n="privacy">Privacy</a><a href="terms.html" data-i18n="terms">Terms</a><a href="refund.html" data-i18n="refund">Refund policy</a></div>
-    </section>
-  </main>
-
-  <footer class="site-footer section-wrap">
-    <a class="brand" href="#home"><span class="brand-mark">A</span><span>AtvTube</span></a>
-    <p data-i18n="footerText">An independent software project.</p>
-    <span>© <span id="year"></span> AtvTube</span>
-  </footer>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+<section class="section"><div class="wrap about">
+<p data-about-text>Atvtube is an independent software project.</p>
+<a class="mail" data-contact-link data-needs-mail hidden></a>
+</div></section>
+</main>
+<footer class="site-footer"><div class="wrap">
+<span>© <span data-year></span> Atvtube · <span data-i18n="footer">An independent software project.</span></span>
+<nav aria-label="Legal"><a href="privacy.html" data-i18n="privacy">Privacy</a><a href="terms.html" data-i18n="terms">Terms</a><a href="refund.html" data-i18n="refund">Refunds</a></nav>
+</div></footer>
 </body>
 </html>
