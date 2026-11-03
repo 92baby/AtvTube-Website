@@ -1,4 +1,4 @@
-# Atvtube website
+# AtvTube website
 
 Static, bilingual (English / 简体中文) site for GitHub Pages. No build step.
 
@@ -23,4 +23,4 @@ Settings → Pages → Source: GitHub Actions. The included workflow deploys on 
 
 - The site does not sell anything. Purchases happen only inside the app, and the copy says so.
 - All text lives in `assets/js/site.js` (both languages). Colors are variables at the top of `assets/css/style.css`.
-- Product name is written "Atvtube" everywhere.
+- Product name is written "AtvTube" everywhere.

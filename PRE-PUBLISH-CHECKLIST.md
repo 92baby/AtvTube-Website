@@ -3,4 +3,4 @@
 - [ ] `contactEmail` set to an address you monitor
 - [ ] Privacy, Terms and Refund pages: every `[Before publishing …]` note replaced; date filled
 - [ ] Refund text matches your actual payment provider's rules
-- [ ] Tested EN / 中文 toggle on desktop and phone
+- [ ] Tested EN / 中文 toggle on desktop and on a TV or mobile screen size
