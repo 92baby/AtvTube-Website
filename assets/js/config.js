@@ -2,12 +2,11 @@
  * Site configuration — the only file you normally need to edit.
  */
 window.ATVTUBE_CONFIG = {
-  // Download links. Default: files placed in the site's /downloads folder.
-  // If a file is over 100 MB, upload it to a GitHub Release instead and use e.g.
-  // "https://github.com/OWNER/REPO/releases/latest/download/android-arm64.apk"
+  // Download links: the latest GitHub Release of 92baby/AtvTube-Website.
+  // Keep the file names android-arm64.apk and android-arm.apk the same in every release.
   downloads: {
-    arm64: "downloads/android-arm64.apk",
-    arm: "downloads/android-arm.apk"
+    arm64: "https://github.com/92baby/AtvTube-Website/releases/latest/download/android-arm64.apk",
+    arm: "https://github.com/92baby/AtvTube-Website/releases/latest/download/android-arm.apk"
   },
   // Optional. Shown next to the downloads, e.g. "v1.2.3". Leave "" to hide.
   version: "",
