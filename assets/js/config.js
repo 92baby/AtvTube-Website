@@ -1,15 +1,15 @@
-/*
- * Site configuration — the only file you normally need to edit.
+/**
+ * Site configuration — edit these values when price or links change.
  */
 window.ATVTUBE_CONFIG = {
-  // Download links: the latest GitHub Release of 92baby/AtvTube-Website.
-  // Keep the file names android-arm64.apk and android-arm.apk the same in every release.
+  siteUrl: "https://atvtube.tubegpt.de5.net",
+  contactEmail: "tebugpt@gmail.com",
+  /** One-time device license price shown on the site (must match Creem product). */
+  licensePrice: "USD $9.99",
+  licensePriceNote: "one-time · per device",
   downloads: {
     arm64: "https://github.com/92baby/AtvTube-Website/releases/latest/download/android-arm64.apk",
     arm: "https://github.com/92baby/AtvTube-Website/releases/latest/download/android-arm.apk"
   },
-  // Optional. Shown next to the downloads, e.g. "v1.2.3". Leave "" to hide.
-  version: "",
-  // Support email. Leave "" to hide every contact link until you have one.
-  contactEmail: ""
+  version: ""
 };
