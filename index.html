@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0f1a1f">
+<meta name="theme-color" content="#0c161b">
 <meta name="description" content="AtvTube is software for Android TV and TV boxes. Download free. Optional one-time device license stops the on-screen reminder. Support: tebugpt@gmail.com">
 <meta property="og:title" content="AtvTube — Android TV software">
 <meta property="og:type" content="website">
@@ -16,29 +16,6 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/config.js" defer></script>
 <script src="assets/js/site.js" defer></script>
-<style>
-  .section{padding:56px 0;border-top:1px solid var(--line)}
-  .section h2{font-size:clamp(28px,4vw,40px);margin-bottom:16px}
-  .section .lead-sm{color:var(--mute);max-width:40em;margin:0 0 28px}
-  .grid-2{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-  .card{background:color-mix(in srgb,var(--paper) 4%,transparent);border:1px solid var(--line);border-radius:16px;padding:22px 24px}
-  .card h3{font-size:18px;margin:0 0 10px}
-  .card p,.card ul{margin:0;color:var(--mute);font-size:15px}
-  .card ul{padding-left:1.15em}
-  .card li{margin:6px 0}
-  .price-box{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px 20px;margin:20px 0 12px}
-  .price-box .amount{font:800 clamp(32px,5vw,48px)/1 var(--display);color:var(--focus)}
-  .price-box .note{color:var(--mute);font-size:15px}
-  .legal-nav{display:flex;flex-wrap:wrap;gap:14px 22px;font-size:14px}
-  .legal-nav a{color:var(--mute);text-decoration:none}
-  .legal-nav a:hover{color:var(--paper)}
-  .site-footer{padding:40px 0 56px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
-  .site-footer strong{color:var(--paper)}
-  .disclaimer{font-size:13px;color:var(--mute);max-width:48em;margin-top:28px;line-height:1.55}
-  .steps{counter-reset:step;list-style:none;padding:0;margin:0;max-width:36em}
-  .steps li{position:relative;padding:14px 0 14px 52px;border-bottom:1px solid var(--line)}
-  .steps li::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:14px;width:32px;height:32px;border-radius:10px;background:var(--focus);color:var(--focus-ink);font:700 14px/32px var(--body);text-align:center}
-</style>
 </head>
 <body>
 <header class="site-header"><div class="wrap">
@@ -57,7 +34,7 @@
 <main id="top">
 <section class="hero"><div class="wrap">
 <div>
-  <h1>AtvTube, made for the big screen.</h1>
+  <h1>AtvTube, made for the <em>big screen.</em></h1>
   <p class="lead">Software for Android TVs and TV boxes. Install free. Optional one-time device license activates your TV and stops the optional on-screen reminder while you watch.</p>
   <div class="hero-actions">
     <a class="btn btn-focus" href="#download">Download the app</a>
@@ -65,87 +42,111 @@
   </div>
   <p class="hero-meta">Independent software · Not affiliated with Google or YouTube</p>
 </div>
+<div class="tv" aria-hidden="true">
+  <div class="tv-bezel"><div class="tv-screen">
+    <div class="tv-bar">
+      <svg viewBox="0 0 64 64"><rect x="5" y="5" width="54" height="54" rx="13" fill="none" stroke="#ffc24b" stroke-width="6"/><path d="M26 20v24l20-12z" fill="#f3eee3"/></svg>AtvTube
+      <span class="tv-clock" data-clock>20:45</span>
+    </div>
+    <div class="tv-feature"></div>
+    <div class="tv-grid">
+      <div class="tv-tiles"><span></span><span></span><span></span><span></span></div>
+      <div class="tv-ring"></div>
+    </div>
+  </div></div>
+  <div class="tv-stand"></div>
+</div>
 </div></section>
 
-<section class="section" id="product"><div class="wrap">
-  <h2>What AtvTube is</h2>
-  <p class="lead-sm">AtvTube is an independently developed application for supported Android TVs and TV boxes. It focuses on everyday convenience on a television screen—such as remote-friendly controls, on-screen local time, and easier use of the device’s preferred subtitle language when those options are available in the app.</p>
-  <div class="grid-2">
+<section class="section band" id="product"><div class="wrap split">
+  <div>
+    <span class="num" aria-hidden="true">01</span>
+    <h2>What AtvTube is</h2>
+    <p class="lead-sm">AtvTube is an independently developed application for supported Android TVs and TV boxes. It focuses on everyday convenience on a television screen—such as remote-friendly controls, on-screen local time, and easier use of the device’s preferred subtitle language when those options are available in the app.</p>
+    <p class="disclaimer">AtvTube does not sell YouTube subscriptions, video content, or access to restricted videos. Availability of any on-screen feature depends on your device and the apps you use.</p>
+  </div>
+  <div class="stack">
     <div class="card">
       <h3>What you get for free</h3>
-      <ul>
+      <ul class="ticks">
         <li>Download and install the APK from this site</li>
         <li>Use AtvTube’s available features on a compatible device</li>
         <li>No account required on this website to download</li>
       </ul>
     </div>
-    <div class="card">
+    <div class="card hl">
       <h3>What a purchaser receives</h3>
-      <ul>
-        <li>A <strong style="color:var(--paper)">one-time device license</strong> for this device</li>
-        <li><strong style="color:var(--paper)">Digital delivery</strong>: activate on the TV after payment (no physical shipping)</li>
-        <li>The device is marked as licensed and the <strong style="color:var(--paper)">periodic authorization reminder stops</strong></li>
+      <ul class="ticks">
+        <li>A <strong>one-time device license</strong> for this device</li>
+        <li><strong>Digital delivery</strong>: activate on the TV after payment (no physical shipping)</li>
+        <li>The device is marked as licensed and the <strong>periodic authorization reminder stops</strong></li>
         <li>App features are not held behind a separate paywall; the license is about device authorization and the reminder</li>
       </ul>
     </div>
   </div>
-  <p class="disclaimer">AtvTube does not sell YouTube subscriptions, video content, or access to restricted videos. Availability of any on-screen feature depends on your device and the apps you use.</p>
 </div></section>
 
-<section class="section" id="pricing"><div class="wrap">
-  <h2>Pricing</h2>
-  <p class="lead-sm">Downloads on this website are free. The optional license is a one-time purchase. Checkout is completed through our payment partner (Creem). This site does not collect card numbers.</p>
-  <div class="card" style="max-width:28em">
+<section class="section light" id="pricing"><div class="wrap split">
+  <div>
+    <span class="num" aria-hidden="true">02</span>
+    <h2>Pricing</h2>
+    <p class="lead-sm">Downloads on this website are free. The optional license is a one-time purchase. Checkout is completed through our payment partner (Creem). This site does not collect card numbers.</p>
+    <p class="disclaimer">Refunds: see our <a href="refund.html">Refund Policy</a> (requests within 7 days under the conditions described there). Support: <a data-contact href="mailto:tebugpt@gmail.com"><span data-contact-text>tebugpt@gmail.com</span></a>.</p>
+  </div>
+  <div class="price-card">
     <h3>AtvTube device license</h3>
     <div class="price-box">
       <span class="amount" data-price>USD $9.99</span>
       <span class="note" data-price-note>one-time · per device</span>
     </div>
-    <p>Pay from the TV app under <strong style="color:var(--paper)">Settings → Device authorization</strong> (QR / phone checkout). After payment, return to the TV; activation is digital.</p>
+    <p>Pay from the TV app under <strong>Settings → Device authorization</strong> (QR / phone checkout). After payment, return to the TV; activation is digital.</p>
   </div>
-  <p class="disclaimer">Refunds: see our <a href="refund.html">Refund Policy</a> (requests within 7 days under the conditions described there). Support: <a data-contact href="mailto:tebugpt@gmail.com"><span data-contact-text>tebugpt@gmail.com</span></a>.</p>
 </div></section>
 
-<section class="section" id="download"><div class="wrap">
+<section class="section band" id="download"><div class="wrap">
+  <span class="num" aria-hidden="true">03</span>
   <h2>Download</h2>
   <p class="lead-sm">Both files are the same app for Android TVs and TV boxes. They differ only by CPU architecture.</p>
-  <div class="grid-2">
-    <div class="card">
-      <h3>arm64 <span style="color:var(--focus);font-size:13px;font-weight:700">Recommended</span></h3>
-      <p style="margin-bottom:16px">64-bit devices — start here for most current TVs and boxes.</p>
+  <div class="dl-grid">
+    <div class="dl rec">
+      <span class="dl-badge">Recommended</span>
+      <h3>arm64</h3>
+      <p>64-bit devices — start here for most current TVs and boxes.</p>
       <a class="btn btn-focus" data-dl-arm64 href="https://github.com/92baby/AtvTube-Website/releases/latest/download/android-arm64.apk">Download android-arm64.apk</a>
     </div>
-    <div class="card">
+    <div class="dl">
       <h3>arm</h3>
-      <p style="margin-bottom:16px">32-bit / older devices — use if arm64 will not install.</p>
+      <p>32-bit / older devices — use if arm64 will not install.</p>
       <a class="btn btn-line" data-dl-arm href="https://github.com/92baby/AtvTube-Website/releases/latest/download/android-arm.apk">Download android-arm.apk</a>
     </div>
   </div>
-  <p class="disclaimer" data-version-wrap hidden>Current package: <span data-version></span></p>
-  <p class="disclaimer">Only install APK files from this site or other sources you trust.</p>
+  <p class="disclaimer version" data-version-wrap hidden>Current package: <span data-version></span></p>
+  <p class="disclaimer dl-note">Only install APK files from this site or other sources you trust.</p>
 </div></section>
 
 <section class="section" id="install"><div class="wrap">
+  <span class="num" aria-hidden="true">04</span>
   <h2>Install in three steps</h2>
   <ol class="steps">
-    <li><strong style="color:var(--paper)">Get the file on the TV</strong> — download with the TV browser, or copy from a computer via USB.</li>
-    <li><strong style="color:var(--paper)">Allow install</strong> — open the APK and allow installs from that source when Android asks.</li>
-    <li><strong style="color:var(--paper)">Install and open</strong> — when finished, AtvTube appears with your other apps.</li>
+    <li><strong>Get the file on the TV</strong> — download with the TV browser, or copy from a computer via USB.</li>
+    <li><strong>Allow install</strong> — open the APK and allow installs from that source when Android asks.</li>
+    <li><strong>Install and open</strong> — when finished, AtvTube appears with your other apps.</li>
   </ol>
 </div></section>
 
-<section class="section" id="support"><div class="wrap">
+<section class="section band" id="support"><div class="wrap">
+  <span class="num" aria-hidden="true">05</span>
   <h2>Support</h2>
   <p class="lead-sm">For download, activation, or billing questions, email us. We aim to respond within 3 business days.</p>
-  <p style="font-size:20px;font-weight:700;margin:0 0 8px">
-    <a data-contact href="mailto:tebugpt@gmail.com" style="color:var(--focus);text-decoration:none"><span data-contact-text>tebugpt@gmail.com</span></a>
-  </p>
-  <p style="color:var(--mute);margin:0;font-size:15px">Please include your purchase email, approximate date/amount, and a short description of the issue when writing about payments.</p>
+  <div class="support" style="margin-top:36px">
+    <a class="mail" data-contact href="mailto:tebugpt@gmail.com"><span data-contact-text>tebugpt@gmail.com</span></a>
+    <p class="aside">Please include your purchase email, approximate date/amount, and a short description of the issue when writing about payments.</p>
+  </div>
 </div></section>
 </main>
 
 <footer class="site-footer"><div class="wrap">
-  <p style="margin:0 0 14px"><strong>Support:</strong> <a data-contact href="mailto:tebugpt@gmail.com"><span data-contact-text>tebugpt@gmail.com</span></a></p>
+  <p><strong>Support:</strong> <a data-contact href="mailto:tebugpt@gmail.com"><span data-contact-text>tebugpt@gmail.com</span></a></p>
   <nav class="legal-nav" aria-label="Legal">
     <a href="privacy.html">Privacy Policy</a>
     <a href="terms.html">Terms of Service</a>
@@ -153,7 +154,7 @@
     <a href="#pricing">Pricing</a>
     <a href="#download">Download</a>
   </nav>
-  <p style="margin:22px 0 0">© <span data-year>2026</span> AtvTube. Independent software project. Not affiliated with, endorsed by, or connected to Google or YouTube.</p>
+  <p class="copy">© <span data-year>2026</span> AtvTube. Independent software project. Not affiliated with, endorsed by, or connected to Google or YouTube.</p>
 </div></footer>
 </body>
 </html>

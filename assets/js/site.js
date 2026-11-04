@@ -44,4 +44,16 @@
   y.forEach(function (el) {
     el.textContent = year;
   });
+
+  // Decorative TV mock-up: show the visitor's local time.
+  var clock = document.querySelectorAll("[data-clock]");
+  if (clock.length) {
+    var tick = function () {
+      var d = new Date();
+      var t = ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2);
+      clock.forEach(function (el) { el.textContent = t; });
+    };
+    tick();
+    setInterval(tick, 20000);
+  }
 })();
